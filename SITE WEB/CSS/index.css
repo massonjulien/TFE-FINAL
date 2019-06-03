@@ -1,0 +1,808 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin : 0px;
+  height: 100%;
+  padding : 0;
+  background-color: ivory;
+}
+
+.imgAcceuil {
+  display: block;
+  width : 70%;
+  height : auto;
+  margin : auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  /* background-image: url("../IMG/pasta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #FFDB58; */
+  background-color: #383838;
+  font-family: Broadway;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px;
+  height : 80px;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.imgCenter {
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width : 100%;
+height : 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #89C35C;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #9DC209;
+}
+
+ul#menu li {
+  display:inline;
+}
+
+.aside {
+  background-color: #89C35C;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  /*background-image: url("../IMG/essui.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  background-color: #383838;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  height : 20%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 75%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+.row {
+   padding-bottom:60px;   /* Height of the footer */
+
+}
+.footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightgrey;
+  height : 50px;
+  padding : 4px;
+  width : 100%;
+}
+
+.topnavCentered {
+  width : 33%;
+  height : 100%;
+  margin : 0 33.5%;
+}
+
+.menuImg {
+  height : 100%;
+  object-fit: contain;
+}
+
+.containerSearch {
+  height : 100%;
+  float: left;
+  margin : 0 6%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.icon {
+  background-color: white;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*
+
+  CONNECTION SCREEN & ACCOUNT PART
+
+*/
+#main {
+  width : 100%;
+}
+
+#tableCo {
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+#notCorrectLogs {
+  font-size: 20px;
+  margin-top:1%;
+  color : red;
+}
+
+.connected {
+  display : block;
+  text-align: center;
+  margin : 0 20%;
+}
+
+.labelInfo {
+  text-align : left;
+  color : grey;
+  margin-bottom : 10px;
+}
+
+.info {
+  margin : 20px 20% 20px 20%;
+
+}
+
+.main_connectionScreen, .main_registerScreen, #main_addressScreen, #main_ordersScreen, #main_OrderDetail, #main_advertsScreen, #main_newAdvertScreen, #main_AdvertDetailScreen {
+  padding : 20px;
+  text-align : center;
+  margin : 2% 33.5%;
+  padding-left : auto;
+  padding-right : auto;
+}
+
+.buttonCo {
+  background-color: grey;
+  border : 2px grey solid;
+  color : white;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  height : 50px;
+  width : 100%;
+}
+
+.loginInput {
+  margin-top : 1%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  width : 100%;
+  height : 45px;
+  padding : 2px;
+  padding-left : 4%;
+  background-color:  white;
+}
+
+.profileimg {
+  height : 20%;
+  width : 20%;
+  border-radius : 100%;
+  border : 1px black solid;
+}
+
+.rateImg {
+  margin-top : 20px;
+  height : 20%;
+  width : 20%;
+}
+
+.modal {
+  width : 100%;
+  height : 100%;
+  position : absolute;
+
+  left : 0;
+  top : 0;
+  text-align: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.modal-content {
+  position : absolute;
+  width : 25%;
+  left : 37.5%;
+  top : 30%;
+}
+
+.buttonModal {
+  background-color: white;
+  border : 0px;
+  font-size: 20px;
+}
+
+.modal-ok, .modal-cancel, .modal-header, .modal-header-password {
+  background-color: white;
+  margin-top : 10px;
+  border : 2px black solid;
+  border-radius : 10px;
+}
+
+.modal-header {
+  padding-top : 50px;
+  height : 210px;
+}
+
+.modal-header-password {
+  padding-top : 50px;
+  height : 280px;
+}
+
+.inputModalMDP, .inputModalPhone {
+  width : 75%;
+  text-align: center;
+  font-size: 16px;
+  margin-top : 10px;
+}
+
+
+.labelCo, #labelCo {
+  margin : 0;
+  width : 100%;
+  text-align: left;
+}
+
+.labelCo {
+  font-size: 15px;
+  margin-top : 2%;
+}
+
+
+#labelCo {
+
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/*
+
+  Search CSS Section
+
+*/
+#main_searchScreen {
+  text-align: center;
+  margin : 2% 33.5%;
+}
+
+.contentDataSearch {
+  text-align: center;
+  width : 100%;
+  background-color: : lightgrey ;
+  border : 1px lightgrey solid;
+  border-radius: 10px;
+  margin-bottom : 2%;
+}
+
+.advertPictureSearch {
+  height: 100%;
+  width: 100%
+  margin :0px;
+  object-fit: contain;
+}
+
+.ratePictureSearch {
+  margin-top : 2%;
+  width : 27%;
+  height : 20%;
+}
+
+#buttonSearch {
+  margin : 0;
+  margin-bottom: 2%;
+}
+
+.imgContainerSearch {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height : 200px;
+  background-color: grey;
+  padding : 0px;
+}
+
+.infos {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left : 5%;
+}
+
+.sousInfos {
+  text-align: left;
+  font-style: italic;
+  margin-left : 10%;
+}
+
+/*
+  ADVERT DETAIL CSS SECTION
+*/
+
+#retourAdvertDetail, #retourOrderDetail {
+  width : 150px;
+  top : 0;
+  left : 0;
+}
+
+#main_advertDetail {
+  text-align: center;
+  margin : 0 33.5%;
+}
+
+.profileimgAdvertDetail {
+  height : 35%;
+  width : 35%;
+  border-radius : 100%;
+  border : 1px black solid;
+}
+
+.ratePictureSearchAdvertDetail {
+  margin-top : 2%;
+  width : 35%;
+}
+
+.infoDesc {
+  text-align : justify;
+  margin-left : 5%;
+}
+
+.infosAdvertDetail {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.selectAdvertDetail {
+  width : 100%;
+  height : 27px;
+  border-radius: 2px;
+}
+
+.imgContainerAdvertDetail {
+  margin-top : 3%;
+  border-top : 1px black solid;
+  border-bottom : 1px black solid;
+  background-color: grey;
+  height : 300px;
+}
+
+.advertPictureAdvertDetail {
+  height: 100%;
+  width : 100%;
+  object-fit: contain;
+}
+
+.identity {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  margin : 0;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-bottom : 1%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  border-radius: 50px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#notCorrectLogs {
+  text-align: center;
+}
+
+/*
+
+  Address Screen
+
+*/
+
+.contentAddress {
+width : 100%;
+height : 65px;
+border : 1px black solid;
+border-radius: 10px;
+margin-top : 10px;
+}
+
+.infoAddress {
+  background-color: white;
+  border-radius: 10px;
+  float : left;
+  width : 95%;
+  height : 100%;
+  padding : 2%;
+}
+
+.rightAddress {
+  text-align: right;
+  text-transform: uppercase;
+  margin : 0;
+}
+
+.leftAddress {
+  margin : 0;
+  text-align: left;
+}
+
+.deleteAddress {
+  background-color: red;
+  float : left;
+  width : 5%;
+  height : 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding-top : 5%;
+  color : white;
+}
+
+
+/*
+
+  MY ORDER CSS SECTION
+
+*/
+.orderContent {
+  width : 100%;
+  height : 180px;
+  border : 1px grey solid;
+  margin-bottom : 5%;
+}
+
+
+
+.orderContent_image {
+  height : 100%;
+  width : 43%;
+  background-color: grey;
+  float : left;
+}
+
+.orderContent_infos {
+  width : 50%;
+  float : left;
+}
+
+.order_advertpicture {
+  width : 100%;
+  height : 100%;
+  object-fit: contain;
+}
+
+.infosOrderDetail {
+  text-align: left;
+  margin-left : 7%;
+  font-style: italic;
+}
+
+.checkboxOrderDetail {
+  padding:10px;
+  height : 45px;
+  background-color: grey;
+  border-radius: 10px;
+  color : white;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: .15em; left: .22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+
+/* hover style just for information */
+
+.starRate {
+  height : 100%;
+}
+.container_rateImg {
+  height : 50px;
+}
+
+.buttonCoRate {
+  width : 60%;
+  margin : 2% 19%;
+  float : left;
+}
+
+.uSure {
+  width : 100%;
+  height : 5px;
+  text-align: center;
+}
+
+
+.imgNewAdvert {
+  border : 1px grey solid;
+  margin-bottom : 3%;
+  width : 100%;
+  height : 320px;
+  background-color: grey;
+  object-fit: contain;
+
+}
+
+/* styles de base si JS est activé */
+.js .input-file-container {
+  width: 100%;
+}
+.js .input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: grey;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  padding: 14px 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* quelques styles d'interactions */
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: darkgrey;
+  color: color;
+}
+
+/* styles du retour visuel */
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+/* on complète l'information d'un contenu textuel
+   uniquement lorsque le paragraphe n'est pas vide */
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.descriptionNewAdvert {
+  height : 200px;
+}
+
+
+.advert {
+  width : 100%;
+  height : 180px;
+  border : 1px grey solid;
+  margin-bottom : 5%;
+}
+
+.greenVImg {
+  width : 20%;
+  height : 80%;
+  object-fit: contain;
+}
